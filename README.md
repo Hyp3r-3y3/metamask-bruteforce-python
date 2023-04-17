@@ -1,5 +1,5 @@
 ![brute](https://user-images.githubusercontent.com/68604388/232552949-1bd03b4a-2392-4007-8dd0-568bac6ae21a.PNG)
-# metamask-bruteforce-python
+# Metamask mnemonic bruteforce in python
 Test valid mnemonics according to the BIP32 standard and check if the corresponding public address has any transactions on the Ethereum, Binance and Polygon blockchains. If the wallet hasn't had any transactions on these chains, it adds it to empty.txt, if it did, it adds it to valid.txt.
 
 # Instruction
