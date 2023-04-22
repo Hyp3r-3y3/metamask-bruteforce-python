@@ -14,6 +14,8 @@ def eth_scan(_api, _address):
         data = response.json()
         if data["status"] == "1" and len(data["result"]) > 0:
             return True
+        elif data["message"] == "NOTOK":
+            print("INVALID ETH API KEY !!!")
         else:
             return False
     else:
@@ -33,6 +35,8 @@ def bsc_scan(_api, _address):
         data = response.json()
         if data["status"] == "1" and len(data["result"]) > 0:
             return True
+        elif data["message"] == "NOTOK":
+            print("INVALID BSC API KEY !!!")
         else:
             return False
     else:
@@ -52,6 +56,8 @@ def poly_scan(_api, _address):
         data = response.json()
         if data["status"] == "1" and len(data["result"]) > 0:
             return True
+        elif data["message"] == "NOTOK":
+            print("INVALID POLY API KEY !!!")
         else:
             return False
     else:
@@ -72,6 +78,8 @@ def apto_scan(_address):
         data = response.json()
         if data["status"] == "1" and len(data["result"]) > 0:
             return True
+        elif data["message"] == "NOTOK":
+            print("INVALID APTO API KEY !!!")
         else:
             return False
     else:
@@ -91,6 +99,8 @@ def cro_scan(_api, _address):
         data = response.json()
         if data["status"] == "1" and len(data["result"]) > 0:
             return True
+        elif data["message"] == "NOTOK":
+            print("INVALID CRO API KEY !!!")
         else:
             return False
     else:
