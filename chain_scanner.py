@@ -46,9 +46,9 @@ def bsc_scan(_api, _address):
         elif data["result"] == "Max rate limit reached, please use API Key for higher rate limit":
             print("ERROR: Max rate limit reached, please use API Key for higher rate limit. HOW TO SOLVE: Try to reduce the number of cores OR upgrade the API KEY calls per second. (Standard rate: 5 per second)")
         elif data["message"] == "NOTOK":
-            print("Some errors on Etherscan. Message = 'NOTOK'")
+            print("Some errors on Bscscan. Message = 'NOTOK'")
         elif data["message"] == "NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied":
-            print("Some errors on Etherscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
+            print("Some errors on Bscscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
         else:
             return False
     else:
@@ -73,9 +73,9 @@ def poly_scan(_api, _address):
         elif data["result"] == "Max rate limit reached, please use API Key for higher rate limit":
             print("ERROR: Max rate limit reached, please use API Key for higher rate limit. HOW TO SOLVE: Try to reduce the number of cores OR upgrade the API KEY calls per second. (Standard rate: 5 per second)")
         elif data["message"] == "NOTOK":
-            print("Some errors on Etherscan. Message = 'NOTOK'")
+            print("Some errors on Polyscan. Message = 'NOTOK'")
         elif data["message"] == "NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied":
-            print("Some errors on Etherscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
+            print("Some errors on Polyscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
         else:
             return False
     else:
@@ -101,9 +101,9 @@ def apto_scan(_address):
         elif data["result"] == "Max rate limit reached, please use API Key for higher rate limit":
             print("ERROR: Max rate limit reached, please use API Key for higher rate limit. HOW TO SOLVE: Try to reduce the number of cores OR upgrade the API KEY calls per second. (Standard rate: 5 per second)")
         elif data["message"] == "NOTOK":
-            print("Some errors on Etherscan. Message = 'NOTOK'")
+            print("Some errors on Aptoscan. Message = 'NOTOK'")
         elif data["message"] == "NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied":
-            print("Some errors on Etherscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
+            print("Some errors on Aptoscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
         else:
             return False
     else:
@@ -128,9 +128,9 @@ def cro_scan(_api, _address):
         elif data["result"] == "Max rate limit reached, please use API Key for higher rate limit":
             print("ERROR: Max rate limit reached, please use API Key for higher rate limit. HOW TO SOLVE: Try to reduce the number of cores OR upgrade the API KEY calls per second. (Standard rate: 5 per second)")
         elif data["message"] == "NOTOK":
-            print("Some errors on Etherscan. Message = 'NOTOK'")
+            print("Some errors on Croscan. Message = 'NOTOK'")
         elif data["message"] == "NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied":
-            print("Some errors on Etherscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
+            print("Some errors on Croscan. Message = 'NOTOK-Missing/Invalid API Key, rate limit of 1/5sec applied'")
         else:
             return False
     else:
