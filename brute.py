@@ -4,9 +4,7 @@ from mnemonic import Mnemonic
 from eth_account import Account
 from chain_scanner import eth_scan, bsc_scan, poly_scan
 
-Account_numbers_per_wallet = 1 # 1 Recommended
-
-Multicore_Booster = True # True Recommended
+Account_numbers_per_wallet = 1  # 1 Recommended
 
 api_eth = "YOUR ETHERSCAN API KEY"
 api_bsc = "YOUR BSCSCAN API KEY"
@@ -43,18 +41,17 @@ def bruteforce():
 
 # Multi-core Booster
 if __name__ == '__main__':
-    if Multicore_Booster == True:
-        num_processes = cpu_count()
-        processes = []
-        
-        for i in range(num_processes):
-            process = Process(target=bruteforce)
-            processes.append(process)
-        
-        for process in processes:
-            process.start()
-        
-        for process in processes:
-            process.join()
-    else:
-        bruteforce()
+    num_processes = cpu_count()
+    processes = []
+    
+    input_processes = int(input(f"({num_processes} available cores) Select how many cores you want to use: "))
+
+    for i in range(input_processes):
+        process = Process(target=bruteforce)
+        processes.append(process)
+    
+    for process in processes:
+        process.start()
+    
+    for process in processes:
+        process.join()
