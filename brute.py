@@ -44,7 +44,7 @@ if __name__ == '__main__':
     num_processes = cpu_count()
     processes = []
     
-    input_processes = int(input(f"({num_processes} available cores) Select how many cores you want to use: "))
+    input_processes = int(input(f"({num_processes} available cores) Select how many cores you want to use (MAX 5 recommended using standard API KEY): "))
 
     for i in range(input_processes):
         process = Process(target=bruteforce)
